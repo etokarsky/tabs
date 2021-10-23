@@ -1,0 +1,157 @@
+/*Обнуление*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+/*--------------------*/
+
+body {
+	background: #333;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #fff;
+	font-size: 16px;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	max-width: 1000px;
+	margin: 0px auto;
+	padding: 50px 0;
+}
+
+.tabs {
+	margin: 0px 0px 50px 0px;
+}
+
+.tabs__items {
+	display: flex;
+}
+
+.tabs__item {
+	flex: 0 1 33.333%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	text-transform: uppercase;
+	color: #fff;
+	cursor: pointer;
+}
+
+.tabs__item:nth-child(1).active {
+	background: #eb8698;
+}
+
+.tabs__item:nth-child(2).active {
+	background: #9278aa;
+}
+
+.tabs__item:nth-child(3).active {
+	background: #97c67d;
+}
+
+.tabs__block {
+	display: none;
+	padding: 20px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.tabs__block:nth-child(1) {
+	background: #eb8698;
+}
+
+.tabs__block:nth-child(2) {
+	background: #9278aa;
+}
+
+.tabs__block:nth-child(3) {
+	background: #97c67d;
+}
+
+.tabs__block.active {
+	display: block;
+}
+
+.text {
+	font-size: 18px;
+	line-height: 24px;
+}
